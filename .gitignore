@@ -1,5 +1,12 @@
 # Project exclude paths
 /out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 ### IntelliJ ###
 .idea/
+
+### Mac OS ###MacOS
+.DS_Store
+
+
