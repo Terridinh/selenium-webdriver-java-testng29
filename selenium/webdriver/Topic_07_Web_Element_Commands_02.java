@@ -32,33 +32,33 @@ public class Topic_07_Web_Element_Commands_02 {
         if (driver.findElement(By.cssSelector("input#mail")).isDisplayed()) {
             driver.findElement(By.cssSelector("input#mail")).sendKeys("Automation Tesing");
             System.out.println("Email Textbox is displayed");
-        }
-        else {
+        } else {
             System.out.println("Email Textbox is not displayed");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#under_18")).isDisplayed()) {
             driver.findElement(By.cssSelector("input#under_18")).click();
             System.out.println("Under 18 Radio is displayed");
-        }
-        else {
+        } else {
             System.out.println("Under 18 Radio is not displayed");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("textarea#edu")).isDisplayed()) {
             driver.findElement(By.cssSelector("textarea#edu")).sendKeys("Automation Testing");
             System.out.println("Education TextArea is displayed");
-        }
-        else {
+        } else {
             System.out.println("Education TextArea is not displayed");
-        };
+        }
+        ;
 
         if (driver.findElement(By.xpath("//h5[text()='Name: User5']")).isDisplayed()) {
             System.out.println("Name User5 text is displayed");
-        }
-        else {
+        } else {
             System.out.println("Name User5 text is not displayed");
-        };
+        }
+        ;
 
     }
 
@@ -68,95 +68,96 @@ public class Topic_07_Web_Element_Commands_02 {
 
         if (driver.findElement(By.cssSelector("input#mail")).isEnabled()) {
             System.out.println("Email Textbox is enabled");
-        }
-        else {
+        } else {
             System.out.println("Email Textbox is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#under_18")).isEnabled()) {
             System.out.println("Under 18 Radio is enabled");
-        }
-        else {
+        } else {
             System.out.println("Under 18 Radio is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("textarea#edu")).isEnabled()) {
             System.out.println("Education TextArea is enabled");
-        }
-        else {
+        } else {
             System.out.println("Education TextArea is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("select#job1")).isEnabled()) {
             System.out.println("Job Row1 Dropdown is enabled");
-        }
-        else {
+        } else {
             System.out.println("Job Row1 Dropdown is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("select#job2")).isEnabled()) {
             System.out.println("Job Row2 Dropdown is enabled");
-        }
-        else {
+        } else {
             System.out.println("Job Row2 Dropdown is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#development")).isEnabled()) {
             System.out.println("Development Checkbox is enabled");
-        }
-        else {
+        } else {
             System.out.println("Development Checkbox is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#slider-1")).isEnabled()) {
             System.out.println("Slider 01 is enabled");
-        }
-        else {
+        } else {
             System.out.println("Slider 01 is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#disable_password")).isEnabled()) {
             System.out.println("Password Textbox is enabled");
-        }
-        else {
+        } else {
             System.out.println("Password Textbox is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#radio-disabled")).isEnabled()) {
             System.out.println("Age Radiobutton is enabled");
-        }
-        else {
+        } else {
             System.out.println("Age Radiobutton is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("textarea#bio")).isEnabled()) {
             System.out.println("Biography TextArea is enabled");
-        }
-        else {
+        } else {
             System.out.println("Biography TextArea is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("select#job3")).isEnabled()) {
             System.out.println("Job Row3 Dropdown is enabled");
-        }
-        else {
+        } else {
             System.out.println("Job Row3 Dropdown is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#check-disbaled")).isEnabled()) {
             System.out.println("Interest Checkbox is enabled");
-        }
-        else {
+        } else {
             System.out.println("Interest Checkbox is disabled");
-        };
+        }
+        ;
 
         if (driver.findElement(By.cssSelector("input#slider-2")).isEnabled()) {
             System.out.println("Slider 02 is enabled");
-        }
-        else {
+        } else {
             System.out.println("Slider 02 is disabled");
-        };
+        }
+        ;
     }
+
     @Test
     public void TC_03_Selected() {
         driver.get("https://automationfc.github.io/basic-form/index.html");
@@ -172,8 +173,8 @@ public class Topic_07_Web_Element_Commands_02 {
         Assert.assertFalse(driver.findElement(By.cssSelector("input#java")).isSelected());
 
 
-
     }
+
     @Test
     public void TC_04_MailChimp() {
 
@@ -267,10 +268,12 @@ public class Topic_07_Web_Element_Commands_02 {
         Assert.assertTrue(driver.findElement(By.cssSelector("li[class='8-char not-completed']")).isDisplayed());
         Assert.assertTrue(driver.findElement(By.cssSelector("li.username-check.not-completed")).isDisplayed());
     }
+
     @AfterClass
     public void afterClass() {
-       // driver.quit();
+        // driver.quit();
     }
+
     public void sleepInSeconds(long timeInSecond) {
         try {
             Thread.sleep(timeInSecond * 1000);

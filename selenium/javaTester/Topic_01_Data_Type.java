@@ -3,6 +3,7 @@ package javaTester;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
 public class Topic_01_Data_Type {
     FirefoxDriver firefoxDriver = new FirefoxDriver();
@@ -18,4 +19,13 @@ public class Topic_01_Data_Type {
     int[] studentAge = {15, 20, 8};
     String[] studentName = {"Automation", "Testing"};
 
+
+public static void main(String[] args) {
+    boolean status = true;
+    if(status) {
+        Assert.assertTrue(true);
+    } else {
+
+    }
+}
 }
